@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E805DE1D885480001D1F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805DD1D885480001D1F8D /* Foundation.framework */; };
+		09E805E01D885480001D1F8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805DF1D885480001D1F8D /* CoreGraphics.framework */; };
+		09E805E21D885480001D1F8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805E11D885480001D1F8D /* UIKit.framework */; };
+		09E805E81D885480001D1F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09E805E61D885480001D1F8D /* InfoPlist.strings */; };
+		09E805EA1D885480001D1F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E805E91D885480001D1F8D /* main.m */; };
+		09E805EE1D885480001D1F8D /* IBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E805ED1D885480001D1F8D /* IBAppDelegate.m */; };
+		09E805F11D885480001D1F8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E805EF1D885480001D1F8D /* Main.storyboard */; };
+		09E805F41D885480001D1F8D /* IBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E805F31D885480001D1F8D /* IBViewController.m */; };
+		09E805F61D885480001D1F8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E805F51D885480001D1F8D /* Images.xcassets */; };
+		09E805FD1D885480001D1F8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805FC1D885480001D1F8D /* XCTest.framework */; };
+		09E805FE1D885480001D1F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805DD1D885480001D1F8D /* Foundation.framework */; };
+		09E805FF1D885480001D1F8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805E11D885480001D1F8D /* UIKit.framework */; };
+		09E806071D885480001D1F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09E806051D885480001D1F8D /* InfoPlist.strings */; };
+		09E806091D885480001D1F8D /* VkAudioAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E806081D885480001D1F8D /* VkAudioAppTests.m */; };
+		1610CA2388D20B45DC357B3C /* libPods-VkAudioApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CC93719F096D7CA310B54B /* libPods-VkAudioApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09E806001D885480001D1F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E805D21D885480001D1F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09E805D91D885480001D1F8D;
+			remoteInfo = VkAudioApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E805DA1D885480001D1F8D /* VkAudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkAudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E805DD1D885480001D1F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09E805DF1D885480001D1F8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09E805E11D885480001D1F8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09E805E51D885480001D1F8D /* VkAudioApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkAudioApp-Info.plist"; sourceTree = "<group>"; };
+		09E805E71D885480001D1F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09E805E91D885480001D1F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09E805EB1D885480001D1F8D /* VkAudioApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VkAudioApp-Prefix.pch"; sourceTree = "<group>"; };
+		09E805EC1D885480001D1F8D /* IBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAppDelegate.h; sourceTree = "<group>"; };
+		09E805ED1D885480001D1F8D /* IBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBAppDelegate.m; sourceTree = "<group>"; };
+		09E805F01D885480001D1F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09E805F21D885480001D1F8D /* IBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBViewController.h; sourceTree = "<group>"; };
+		09E805F31D885480001D1F8D /* IBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBViewController.m; sourceTree = "<group>"; };
+		09E805F51D885480001D1F8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09E805FB1D885480001D1F8D /* VkAudioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkAudioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E805FC1D885480001D1F8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		09E806041D885480001D1F8D /* VkAudioAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkAudioAppTests-Info.plist"; sourceTree = "<group>"; };
+		09E806061D885480001D1F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09E806081D885480001D1F8D /* VkAudioAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VkAudioAppTests.m; sourceTree = "<group>"; };
+		23CC93719F096D7CA310B54B /* libPods-VkAudioApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VkAudioApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FE33F563E440148DF8A4C3 /* Pods-VkAudioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkAudioApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkAudioApp/Pods-VkAudioApp.release.xcconfig"; sourceTree = "<group>"; };
+		E418E251E15F16AD5E89542C /* Pods-VkAudioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkAudioApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VkAudioApp/Pods-VkAudioApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09E805D71D885480001D1F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E805E01D885480001D1F8D /* CoreGraphics.framework in Frameworks */,
+				09E805E21D885480001D1F8D /* UIKit.framework in Frameworks */,
+				09E805DE1D885480001D1F8D /* Foundation.framework in Frameworks */,
+				1610CA2388D20B45DC357B3C /* libPods-VkAudioApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E805F81D885480001D1F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E805FD1D885480001D1F8D /* XCTest.framework in Frameworks */,
+				09E805FF1D885480001D1F8D /* UIKit.framework in Frameworks */,
+				09E805FE1D885480001D1F8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09E805D11D885480001D1F8D = {
+			isa = PBXGroup;
+			children = (
+				09E805E31D885480001D1F8D /* VkAudioApp */,
+				09E806021D885480001D1F8D /* VkAudioAppTests */,
+				09E805DC1D885480001D1F8D /* Frameworks */,
+				09E805DB1D885480001D1F8D /* Products */,
+				57E2A3C79429346C2A1A564B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		09E805DB1D885480001D1F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09E805DA1D885480001D1F8D /* VkAudioApp.app */,
+				09E805FB1D885480001D1F8D /* VkAudioAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09E805DC1D885480001D1F8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E805DD1D885480001D1F8D /* Foundation.framework */,
+				09E805DF1D885480001D1F8D /* CoreGraphics.framework */,
+				09E805E11D885480001D1F8D /* UIKit.framework */,
+				09E805FC1D885480001D1F8D /* XCTest.framework */,
+				23CC93719F096D7CA310B54B /* libPods-VkAudioApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09E805E31D885480001D1F8D /* VkAudioApp */ = {
+			isa = PBXGroup;
+			children = (
+				09E805EC1D885480001D1F8D /* IBAppDelegate.h */,
+				09E805ED1D885480001D1F8D /* IBAppDelegate.m */,
+				09E805EF1D885480001D1F8D /* Main.storyboard */,
+				09E805F21D885480001D1F8D /* IBViewController.h */,
+				09E805F31D885480001D1F8D /* IBViewController.m */,
+				09E805F51D885480001D1F8D /* Images.xcassets */,
+				09E805E41D885480001D1F8D /* Supporting Files */,
+			);
+			path = VkAudioApp;
+			sourceTree = "<group>";
+		};
+		09E805E41D885480001D1F8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09E805E51D885480001D1F8D /* VkAudioApp-Info.plist */,
+				09E805E61D885480001D1F8D /* InfoPlist.strings */,
+				09E805E91D885480001D1F8D /* main.m */,
+				09E805EB1D885480001D1F8D /* VkAudioApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09E806021D885480001D1F8D /* VkAudioAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				09E806081D885480001D1F8D /* VkAudioAppTests.m */,
+				09E806031D885480001D1F8D /* Supporting Files */,
+			);
+			path = VkAudioAppTests;
+			sourceTree = "<group>";
+		};
+		09E806031D885480001D1F8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09E806041D885480001D1F8D /* VkAudioAppTests-Info.plist */,
+				09E806051D885480001D1F8D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57E2A3C79429346C2A1A564B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E418E251E15F16AD5E89542C /* Pods-VkAudioApp.debug.xcconfig */,
+				38FE33F563E440148DF8A4C3 /* Pods-VkAudioApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09E805D91D885480001D1F8D /* VkAudioApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E8060C1D885480001D1F8D /* Build configuration list for PBXNativeTarget "VkAudioApp" */;
+			buildPhases = (
+				994B70C3794D5AE2A6692B26 /* [CP] Check Pods Manifest.lock */,
+				09E805D61D885480001D1F8D /* Sources */,
+				09E805D71D885480001D1F8D /* Frameworks */,
+				09E805D81D885480001D1F8D /* Resources */,
+				47843BAFEEE4FEFCD969341E /* [CP] Embed Pods Frameworks */,
+				CCDFE1548DCE252C576B2EF2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkAudioApp;
+			productName = VkAudioApp;
+			productReference = 09E805DA1D885480001D1F8D /* VkAudioApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09E805FA1D885480001D1F8D /* VkAudioAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E8060F1D885480001D1F8D /* Build configuration list for PBXNativeTarget "VkAudioAppTests" */;
+			buildPhases = (
+				09E805F71D885480001D1F8D /* Sources */,
+				09E805F81D885480001D1F8D /* Frameworks */,
+				09E805F91D885480001D1F8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09E806011D885480001D1F8D /* PBXTargetDependency */,
+			);
+			name = VkAudioAppTests;
+			productName = VkAudioAppTests;
+			productReference = 09E805FB1D885480001D1F8D /* VkAudioAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09E805D21D885480001D1F8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = IB;
+				TargetAttributes = {
+					09E805FA1D885480001D1F8D = {
+						TestTargetID = 09E805D91D885480001D1F8D;
+					};
+				};
+			};
+			buildConfigurationList = 09E805D51D885480001D1F8D /* Build configuration list for PBXProject "VkAudioApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09E805D11D885480001D1F8D;
+			productRefGroup = 09E805DB1D885480001D1F8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09E805D91D885480001D1F8D /* VkAudioApp */,
+				09E805FA1D885480001D1F8D /* VkAudioAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09E805D81D885480001D1F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E805F61D885480001D1F8D /* Images.xcassets in Resources */,
+				09E805E81D885480001D1F8D /* InfoPlist.strings in Resources */,
+				09E805F11D885480001D1F8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E805F91D885480001D1F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E806071D885480001D1F8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47843BAFEEE4FEFCD969341E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VkAudioApp/Pods-VkAudioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		994B70C3794D5AE2A6692B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCDFE1548DCE252C576B2EF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VkAudioApp/Pods-VkAudioApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09E805D61D885480001D1F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E805EA1D885480001D1F8D /* main.m in Sources */,
+				09E805EE1D885480001D1F8D /* IBAppDelegate.m in Sources */,
+				09E805F41D885480001D1F8D /* IBViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E805F71D885480001D1F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E806091D885480001D1F8D /* VkAudioAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09E806011D885480001D1F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09E805D91D885480001D1F8D /* VkAudioApp */;
+			targetProxy = 09E806001D885480001D1F8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09E805E61D885480001D1F8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E805E71D885480001D1F8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09E805EF1D885480001D1F8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E805F01D885480001D1F8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09E806051D885480001D1F8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E806061D885480001D1F8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09E8060A1D885480001D1F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09E8060B1D885480001D1F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09E8060D1D885480001D1F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E418E251E15F16AD5E89542C /* Pods-VkAudioApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkAudioApp/VkAudioApp-Prefix.pch";
+				INFOPLIST_FILE = "VkAudioApp/VkAudioApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09E8060E1D885480001D1F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FE33F563E440148DF8A4C3 /* Pods-VkAudioApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkAudioApp/VkAudioApp-Prefix.pch";
+				INFOPLIST_FILE = "VkAudioApp/VkAudioApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09E806101D885480001D1F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VkAudioApp.app/VkAudioApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkAudioApp/VkAudioApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VkAudioAppTests/VkAudioAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		09E806111D885480001D1F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VkAudioApp.app/VkAudioApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkAudioApp/VkAudioApp-Prefix.pch";
+				INFOPLIST_FILE = "VkAudioAppTests/VkAudioAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09E805D51D885480001D1F8D /* Build configuration list for PBXProject "VkAudioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E8060A1D885480001D1F8D /* Debug */,
+				09E8060B1D885480001D1F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E8060C1D885480001D1F8D /* Build configuration list for PBXNativeTarget "VkAudioApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E8060D1D885480001D1F8D /* Debug */,
+				09E8060E1D885480001D1F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09E8060F1D885480001D1F8D /* Build configuration list for PBXNativeTarget "VkAudioAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E806101D885480001D1F8D /* Debug */,
+				09E806111D885480001D1F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09E805D21D885480001D1F8D /* Project object */;
+}
