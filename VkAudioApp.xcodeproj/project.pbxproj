@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A70DD41D88609100FBC7E7 /* IBServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A70DD31D88609100FBC7E7 /* IBServerManager.m */; };
 		09E805DE1D885480001D1F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805DD1D885480001D1F8D /* Foundation.framework */; };
 		09E805E01D885480001D1F8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805DF1D885480001D1F8D /* CoreGraphics.framework */; };
 		09E805E21D885480001D1F8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E805E11D885480001D1F8D /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A70DD21D88609100FBC7E7 /* IBServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBServerManager.h; sourceTree = "<group>"; };
+		09A70DD31D88609100FBC7E7 /* IBServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBServerManager.m; sourceTree = "<group>"; };
 		09E805DA1D885480001D1F8D /* VkAudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkAudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E805DD1D885480001D1F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09E805DF1D885480001D1F8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				09E805EF1D885480001D1F8D /* Main.storyboard */,
 				09E805F21D885480001D1F8D /* IBViewController.h */,
 				09E805F31D885480001D1F8D /* IBViewController.m */,
+				09A70DD21D88609100FBC7E7 /* IBServerManager.h */,
+				09A70DD31D88609100FBC7E7 /* IBServerManager.m */,
 				09E805F51D885480001D1F8D /* Images.xcassets */,
 				09E805E41D885480001D1F8D /* Supporting Files */,
 			);
@@ -318,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E805EA1D885480001D1F8D /* main.m in Sources */,
+				09A70DD41D88609100FBC7E7 /* IBServerManager.m in Sources */,
 				09E805EE1D885480001D1F8D /* IBAppDelegate.m in Sources */,
 				09E805F41D885480001D1F8D /* IBViewController.m in Sources */,
 			);
