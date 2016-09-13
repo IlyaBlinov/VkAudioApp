@@ -58,11 +58,21 @@
                         count: (NSInteger) count
                     onSuccess:(void(^) (NSArray *audioFiles)) success
                     onFailure:(void (^)(NSError *error, NSInteger statusCode)) failure{
+    
+    
+    NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                @"237073493", @"owner_id",
+                                @(count),     @"count",
+                                 @(offset),    @"offset", nil];
 
-    [self.requestOperationManager GET:@"audio.get" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self.requestOperationManager GET:@"audio.get" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         NSLog(@"JSON: %@", responseObject);
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
         NSLog(@"Error: %@", error);
+        
     }];
  
     
