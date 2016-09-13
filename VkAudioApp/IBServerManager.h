@@ -10,6 +10,11 @@
 
 @interface IBServerManager : NSObject
 
++ (IBServerManager*) sharedManager;
+
+
+
+
 
 - (void) getAudioFilesWithOffset: (NSInteger) offset
                         count: (NSInteger) count

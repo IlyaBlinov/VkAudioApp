@@ -20,6 +20,22 @@
 @implementation IBServerManager
 
 
++ (IBServerManager*) sharedManager{
+    
+    static IBServerManager *manager = nil;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        manager = [[IBServerManager alloc] init];
+    });
+    
+    return manager;
+    
+}
+
+
+
+
 - (void) getAudioFilesWithOffset: (NSInteger) offset
                         count: (NSInteger) count
                     onSuccess:(void(^) (NSArray *audioFiles)) success
@@ -32,9 +48,7 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
-    
-    
-    
+ 
     
     
 }
