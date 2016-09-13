@@ -9,7 +9,12 @@
 #import "IBServerManager.h"
 #import "AFNetworking.h"
 
+@interface IBServerManager ()
 
+@property (strong, nonatomic) AFHTTPRequestOperationManager *requestOperationManager;
+
+
+@end
 
 
 @implementation IBServerManager
