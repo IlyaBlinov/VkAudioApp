@@ -35,15 +35,31 @@
 
 
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        
+        NSURL *url = [NSURL URLWithString:@"https://api.vk.com/method/"];
+        
+        self.requestOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];
+        
+        
+    }
+    return self;
+}
+
+
+
+
 
 - (void) getAudioFilesWithOffset: (NSInteger) offset
                         count: (NSInteger) count
                     onSuccess:(void(^) (NSArray *audioFiles)) success
                     onFailure:(void (^)(NSError *error, NSInteger statusCode)) failure{
-    
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"https://api.vk.com/method/audio.get" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+    [self.requestOperationManager GET:@"audio.get" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
