@@ -10,4 +10,14 @@
 
 @interface IBServerManager : NSObject
 
+
+- (void) getAudioFilesWithOffset: (NSInteger) offset
+                        count: (NSInteger) count
+                    onSuccess:(void(^) (NSArray *audioFiles)) success
+                    onFailure:(void (^)(NSError *error, NSInteger statusCode)) failure;
+
+
+
+
+
 @end
