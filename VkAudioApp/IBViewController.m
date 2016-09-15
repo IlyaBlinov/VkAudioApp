@@ -11,7 +11,7 @@
 
 @interface IBViewController ()
 
-@property (strong, nonatomic) NSArray *audioFiles;
+@property (strong, nonatomic) NSMutableArray *friends;
 
 @end
 
@@ -20,7 +20,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.friends = [NSMutableArray array];
+    
+    [self getAudioFilesFromServer];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,12 +34,33 @@
 }
 
 
+
+- (void) getAudioFilesFromServer{
+    
+    
+    
+    [[IBServerManager sharedManager] getAudioFilesWithOffset:0 count:10 onSuccess:^(NSArray *friends) {
+        
+        [self.friends addObjectsFromArray:friends];
+        
+        [self.tableView reloadData];
+        
+    } onFailure:^(NSError *error, NSInteger statusCode) {
+        
+    }];
+
+    
+    
+}
+
+
+
 #pragma mark - UITableViewDataSource
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [self.audioFiles count];
+    return [self.friends count];
     
 }
 
@@ -54,6 +79,9 @@
     return cell;
     
 }
+
+
+
 
 
 @end

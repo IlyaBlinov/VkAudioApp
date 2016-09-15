@@ -59,13 +59,19 @@
     
     
     NSDictionary *parameters = [[NSDictionary alloc] initWithObjectsAndKeys:
-                                @"237073493", @"owner_id",
+                                @"237073493", @"user_id",
+                                @"name",      @"order",
                                 @(count),     @"count",
-                                 @(offset),    @"offset", nil];
+                                @(offset),    @"offset",
+                                @"photo_50",  @"fields",
+                                @"nom",       @"name_case", 
+                                nil];
 
-    [self.requestOperationManager GET:@"audio.get" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self.requestOperationManager GET:@"friends.get" parameters:parameters success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
         
-        NSLog(@"JSON: %@", responseObject);
+        NSArray *allFriends = [responseObject objectForKey:@"response"];
+        
+        NSLog(@"JSON: %@", allFriends);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
