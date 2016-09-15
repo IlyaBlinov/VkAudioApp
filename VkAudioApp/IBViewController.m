@@ -7,6 +7,7 @@
 //
 
 #import "IBViewController.h"
+#import "IBServerManager.h"
 
 @interface IBViewController ()
 
