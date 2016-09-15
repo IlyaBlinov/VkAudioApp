@@ -34,17 +34,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    
-    
+    return [self.audioFiles count];
     
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    NSString *identifier = @"cell";
     
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    return cell;
     
 }
 
