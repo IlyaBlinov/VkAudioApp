@@ -10,6 +10,8 @@
 
 @interface IBViewController ()
 
+@property (strong, nonatomic) NSArray *audioFiles;
+
 @end
 
 @implementation IBViewController
